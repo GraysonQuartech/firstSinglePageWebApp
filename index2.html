@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Single Page App</title>
+  </head>
+  <body class="body">
+    <sidebar class="menu">
+      <div class="menu-grid">
+        <a class="menu-item" href="/home" onclick="onLinkClick(event)">Home</a>
+        <a class="menu-item" href="/about" onclick="onLinkClick(event)"
+          >About</a
+        >
+      </div>
+    </sidebar>
+    <div id="page" class="page"></div>
+    <div class="template-container">
+      <template id="home">
+        <div class="page">
+          <h1 class="text">HOME PAGE</h1>
+        </div>
+      </template>
+      <template id="about">
+        <div class="page">
+          <h1 class="text">ABOUT ME</h1>
+          <p>ABOUT ME TEXT HERE.......</p>
+        </div>
+      </template>
+    </div>
+  </body>
+</html>
